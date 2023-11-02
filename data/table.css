@@ -1,0 +1,38 @@
+table {
+  font-size: 5em;
+  margin: 0 auto;
+  height: 90%;
+  width: 50%;
+  color: #bbb;
+  text-align: center;
+  border-radius: 50px;
+}
+th, td {
+  padding:10px;
+  margin:auto;
+  border: solid 5px crimson;
+  background-color: white;
+}
+th {
+  color: transparent;
+  background-color: crimson;
+}
+#return-d {
+  margin: auto;
+}
+#return {
+  display: inline-block;
+  margin: auto;
+  padding: 10px;
+  height:2em;
+  width:2em;
+  border-radius: 0 0 50%;
+  background-color:crimson;
+  text-align:center;
+  color: white;
+  text-decoration: none;
+}
+
+.day {
+  color: black;
+}

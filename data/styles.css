@@ -1,0 +1,86 @@
+/* @import url("reset.css"); */
+@import url("table.css");
+ 
+*{
+  text-decoration:none;
+  font-family: "arial", "helvetica";
+}
+a:active, a:visited {
+  color: #000;
+  text-decoration: none;
+}
+html, body {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #666;
+}
+
+#page {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: crimson;
+}
+
+
+header {
+  font-size: 5em;
+  position: relative;
+  display: block;
+  width: 100%;
+  /* this unit uses html body mesures */
+  height: 100vh;
+}
+
+h1 {
+  position: absolute;
+  font-size: 20vh;
+  bottom:0;
+}
+
+section {
+  height: 100vh;
+}
+
+#articlefix{
+  height: 80vh;
+  padding-top: 10vh;
+}
+article {
+  height: 80%;
+  width: 50%;
+  margin: 50px auto;
+  padding: 2em;
+  background-color: white;
+  border: 1vh solid crimson;
+  border-radius: 50px;
+}
+
+h2 {
+  font-size: 10vh;
+}
+h3 {
+  position:relative;
+  bottom: -50vh;
+  font-size: 4vh;
+  text-align: right;
+}
+
+#close {
+  text-decoration: none;
+  text-align: center;
+  float: right;
+  height: 2vh;
+  width: 2vh;
+  background-color: crimson;
+  color: white;
+  border-radius: 50%;
+}
+
+a {
+  text-decoration: none;
+}
