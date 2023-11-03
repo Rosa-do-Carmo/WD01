@@ -17,6 +17,7 @@ th, td {
 th {
   color: transparent;
   background-color: var(--font);
+  border-top: 50px;
 }
 #return-d {
   margin: auto;
