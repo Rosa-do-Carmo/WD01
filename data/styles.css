@@ -12,7 +12,7 @@
   text-decoration:none;
   font-family: "arial", "helvetica";
 }
-a:active, a:visited {
+a:active {
   color: var(--color1);
   text-decoration: none;
 }
@@ -33,6 +33,9 @@ html, body {
   background-color: var(--color2);
 }
 
+#buffer {
+  height: 50vh;
+}
 
 header {
   font-size: 5em;
@@ -51,7 +54,7 @@ nav {
 
 h1 {
   position: absolute;
-  font-size: 2vh;
+  font-size: 10vh;
   bottom:0;
 }
 
@@ -65,7 +68,7 @@ section {
 }
 article {
   height: 80%;
-  width: 50%;
+  width: 80vw;
   margin: 50px auto;
   padding: 2em;
   background-color: var(--color3);
@@ -78,8 +81,8 @@ h2 {
 }
 h3 {
   position:relative;
-  bottom: -50vh;
-  font-size: 4vh;
+  bottom: -55vh;
+  font-size: 2vh;
   text-align: right;
 }
 
@@ -94,6 +97,8 @@ h3 {
   border-radius: 50%;
 }
 
-a {
+#closea {
+  padding: 1vh;
+  margin:auto;
   text-decoration: none;
 }
