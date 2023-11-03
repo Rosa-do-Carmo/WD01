@@ -3,7 +3,7 @@ table {
   padding-top: 10vh;
   margin: 10vh auto;
   height: 60vh;
-  width: 95vw;
+  width: 100vw;
   text-align: center;
 }
 th, td {
@@ -24,11 +24,13 @@ th {
 }
 #return {
   display: inline-block;
+  position: relative;
   margin: auto;
   margin-left: -5px;
-  margin-top: -5px;
+  margin-top: -25px;
   padding: 10px;
-  height:5vh;
+  padding-top: 5vh;
+  height:10vh;
   width:5vh;
   border-radius: 0 0 50%;
   background-color:var(--color1);
@@ -36,9 +38,15 @@ th {
   text-align:center;
   color: var(--font);
   text-decoration: none;
+  filter: drop-shadow(0 16px var(--font));
 }
 
-.day, .day:after, .day:visited {
+.day {
   color: var(--font);
   background-color: var(--color1);
+}
+
+#return:hover, #return:active {
+  bottom: -16px;
+  filter: none;
 }

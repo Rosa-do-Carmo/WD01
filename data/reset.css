@@ -49,6 +49,9 @@ table {
 }
 a, a:visited, a:hover, a:active {
 	color: inherit;
-  }
-
+}
+body {
+	overflow: hidden;
+}
 /* -  */
+

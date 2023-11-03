@@ -61,25 +61,27 @@ br {
 }
 #frontpagetitle {
   display: inline-block;
+  position: relative;
   margin: 10%  5vw auto;
   padding: 10px;
   border: 5px solid var(--font);
   border-radius: 20px;
   background-color: var(--color2);
+  filter: drop-shadow(0 16px var(--font));
 }
-
+#frontpagetitle:hover {
+  bottom: -16px;
+  filter: none;
+}
 h1 {
   position: absolute;
   font-size: 10vh;
   bottom:5vh;
-  color: var(--accent);
+  color: var(--font);
 }
 
 section {
   height: 100vh;
 }
 
-#articlefix{
-  height: 80vh;
-  padding-top: 10vh;
-}
+
