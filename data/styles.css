@@ -49,15 +49,27 @@ header {
 }
 
 nav {
+  height: 100%;
   width: 100vw;
   font-size: 5vh;
   display:inline-block;
+}
+br {
+  height: 5vh;
+}
+#frontpagetitle {
+  display: inline-block;
+  margin: 10%  5vw auto;
+  padding: 10px;
+  border: 5px solid var(--font);
+  border-radius: 20px;
+  background-color: var(--color2);
 }
 
 h1 {
   position: absolute;
   font-size: 10vh;
-  bottom:0;
+  bottom:5vh;
   color: var(--accent);
 }
 
@@ -96,7 +108,7 @@ h3 {
   height: 2vh;
   width: 2vh;
   background-color: var(--color1);
-  color: var(--bg);
+  color: var(--font);
   border-radius: 50%;
 }
 
