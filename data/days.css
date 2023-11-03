@@ -1,0 +1,39 @@
+    article {
+    height: 80%;
+    width: 80vw;
+    margin: 50px auto;
+    padding: 2em;
+    background-color: var(--color2);
+    border: 5px solid var(--color1);
+    border-radius: 50px;
+    float: none;
+  }
+  
+  h2 {
+    font-size: 5vh;
+  }
+  h3 {
+    position:relative;
+    bottom: -55vh;
+    font-size: 2vh;
+    text-align: right;
+  }
+  
+  #close {
+    text-decoration: none;
+    text-align: center;
+    float: right;
+    height: 2vh;
+    width: 2vh;
+    background-color: var(--color1);
+    color: var(--font);
+    border-radius: 50%;
+  }
+  
+  #closea {
+    padding-top: 5px;
+    margin:auto;
+    text-decoration: none;
+    text-align: center;
+  }
+  
