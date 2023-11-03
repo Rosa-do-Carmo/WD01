@@ -10,8 +10,10 @@
 }
  
 *{
-  text-decoration:none;
   font-family: "arial", "helvetica", sans-serif;
+}
+s {
+  text-decoration: line-through;
 }
 a:active {
   color: var(--font);
