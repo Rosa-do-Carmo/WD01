@@ -1,3 +1,5 @@
+/* The Southern Front*/
+
 #articlefix{
   height: 100vh;
   margin: auto;
@@ -42,3 +44,15 @@ article {
     text-align: center;
   }
   
+  /*The Eastern Front*/
+
+  @media screen and (min-width: 600px) {
+    #articlefix {
+      margin-top: 20vh;
+    }
+    article{
+      height: 60vh;
+      width: 60vw;
+      margin: 20vh 20vw auto;
+    }
+  }

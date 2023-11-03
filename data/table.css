@@ -1,3 +1,5 @@
+/*The central front*/
+
 table {
   font-size: 2vh;
   padding-top: 10vh;
@@ -49,4 +51,21 @@ th {
 #return:hover, #return:active {
   bottom: -16px;
   filter: none;
+}
+
+/*Eastern front*/
+
+/*Note to self: 
+
+make ".day:hover ~ article { }"
+
+to do the popup*/
+
+@media screen and (min-width: 600px) {
+  table {
+    width: 60vw;
+    height: 70vh;
+    padding-top: 0;
+    margin: auto;
+  }
 }

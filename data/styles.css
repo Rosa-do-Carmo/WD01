@@ -1,6 +1,7 @@
-/* @import url("reset.css"); */
+
 @import url("table.css");
 @import url("days.css");
+
 :root {
   --font: #1F1717;
   --bg: #FCF5ED;
@@ -39,14 +40,13 @@ html, body {
 #buffer {
   height: 50vh;
 }
-
+/*The Northen front*/
 header {
   color: var(--font);
   font-size: 5em;
   position: relative;
   display: block;
   width: 100%;
-  /* this unit uses html body mesures */
   height: 100vh;
 }
 
@@ -84,4 +84,15 @@ section {
   height: 100vh;
 }
 
+/*The Eastern Front*/
 
+@media screen and (min-width: 600px) {
+  #frontpagetitle {
+    margin: 5vh 1vw auto;
+  }
+  h1 {
+    margin-left: 1vw;
+    font-size: 200%;
+    bottom: 0;
+  }
+}
