@@ -2,18 +2,19 @@
 @import url("table.css");
 
 :root {
-  --color1: #ffecba;
-  --color2: #fff5dc;
-  --color3: #72cfc7;
-  --bg: #626262;
+  --font: #1F1717;
+  --bg: #FCF5ED;
+  --color1: #CE5A67;
+  --color2: #F4BF96;
+  --accent: #1F1717;
 }
  
 *{
   text-decoration:none;
-  font-family: "arial", "helvetica";
+  font-family: "arial", "helvetica", sans-serif;
 }
 a:active {
-  color: var(--color1);
+  color: var(--font);
   text-decoration: none;
 }
 html, body {
@@ -21,7 +22,7 @@ html, body {
   display: block;
   width: 100vw;
   height: 100vh;
-  background-color: var(--color2);
+  background-color: var(--bg);
 }
 
 #page {
@@ -30,7 +31,7 @@ html, body {
   width: 100%;
   height: 100%;
   margin: 0 auto;
-  background-color: var(--color2);
+  background-color: var(--bg);
 }
 
 #buffer {
@@ -38,6 +39,7 @@ html, body {
 }
 
 header {
+  color: var(--font);
   font-size: 5em;
   position: relative;
   display: block;
@@ -56,6 +58,7 @@ h1 {
   position: absolute;
   font-size: 10vh;
   bottom:0;
+  color: var(--accent);
 }
 
 section {
@@ -71,8 +74,8 @@ article {
   width: 80vw;
   margin: 50px auto;
   padding: 2em;
-  background-color: var(--color3);
-  border: 1vh solid var(--color1);
+  background-color: var(--color2);
+  border: 5px solid var(--color1);
   border-radius: 50px;
 }
 
@@ -98,7 +101,8 @@ h3 {
 }
 
 #closea {
-  padding: 1vh;
+  padding-top: 5px;
   margin:auto;
   text-decoration: none;
+  text-align: center;
 }
