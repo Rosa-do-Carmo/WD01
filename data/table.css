@@ -10,16 +10,19 @@ table {
 }
 th, td {
   color: var(--font);
+  font-size: 200%;
   margin-top: 50px;
   margin:auto;
-  border: solid 5px var(--font);
+  /*border: solid 5px var(--font);*/
   background-color: var(--color2);
-  padding-top: 40px;
+  padding-top: 20px;
+  /*border-radius: 10%;*/
 }
 th {
   color: transparent;
   background-color: var(--font);
   border-top: 50px;
+  border-radius: 10%;
 }
 #return-d {
   margin: auto;
@@ -46,6 +49,7 @@ th {
 .day {
   color: var(--font);
   background-color: var(--color1);
+  border-radius: 50%;
 }
 
 #return:hover, #return:active {

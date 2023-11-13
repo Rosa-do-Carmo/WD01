@@ -13,7 +13,9 @@ article {
     border: 5px solid var(--color1);
     border-radius: 50px;
     float: none;
-    color: var(--font)
+    color: var(--font);
+    columns: 40% 2;
+    column-gap: 10vw;
   }
   
   h2 {
@@ -24,6 +26,7 @@ article {
     bottom: -55vh;
     font-size: 2vh;
     text-align: right;
+
   }
   
   #close {
