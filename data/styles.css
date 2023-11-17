@@ -18,13 +18,14 @@
   --accent: #8d0801;*/
   --font: #01263D;
   --bg: #72bab5;
-  --color2: #fcbf49;
+  --color2: #be1e2d;
   --color1: #ef4043;
+  --color3: #0e4c6d;
   --accent: #8d0801;
 }
  
-*{
-  font-family: "arial", "helvetica", sans-serif;
+* {
+  font-family: "bodyfont","arial", "helvetica", sans-serif;
 }
 s {
   text-decoration: line-through;
@@ -83,7 +84,7 @@ br {
   padding: 10px;
   border: 5px solid var(--font);
   border-radius: 20px;
-  background-color: var(--color2);
+  background-color: var(--color1);
   filter: drop-shadow(0 16px var(--font));
 }
 #frontpagetitle:hover {
@@ -143,13 +144,13 @@ h3 {
   }
 }
 
-p, h3 {
+p, h3, td, th, tr {
   font-size: 200%;
   font-family: "bodyfont";
 }
 h2 {
   font-size: 300%;
 }
-a, h1, h2, h3 {
+a, h1, h2, h3, th, td {
   font-family: "headfont"; 
 }

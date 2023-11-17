@@ -1,28 +1,41 @@
 /*The central front*/
-
-table {
+#table-wrap {
+  margin: 0 auto;
+  padding: 5vh;
+  font-family: "bodyfont";
   font-size: 2vh;
-  padding-top: 10vh;
-  margin: 10vh auto;
-  height: 60vh;
-  width: 100vw;
+  width: 60vw;
+  height: 80vh;
   text-align: center;
+  background-color: var(--color3);
+}
+table {
+margin: auto;
+width: 90%;
 }
 th, td {
+  font-style: bold;
   color: var(--font);
   font-size: 200%;
   margin-top: 50px;
   margin:auto;
-  /*border: solid 5px var(--font);*/
-  background-color: var(--color2);
+  /*border: solid 5px var(--font);
+  background-color: var(--color2);*/
   padding-top: 20px;
   /*border-radius: 10%;*/
 }
+#headless {
+  display: none;
+  color: var(--bg);
+  background-color: var(--color3);
+  height: 10vh;
+  width: 60vw;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 1.5;
+}
 th {
-  color: transparent;
-  background-color: var(--font);
-  border-top: 50px;
-  border-radius: 10%;
+  color: var(--bg);
 }
 #return-d {
   margin: auto;
@@ -34,22 +47,22 @@ th {
   margin-left: -5px;
   margin-top: -25px;
   padding: 10px;
-  padding-top: 5vh;
-  height:10vh;
-  width:5vh;
-  border-radius: 0 0 50%;
+  padding-top: 3vh;
+  height:5vh;
+  width:10vh;
+  border-radius: 0 0 5vh;
   background-color:var(--color1);
   border: 5px solid var(--font);
   text-align:center;
   color: var(--font);
   text-decoration: none;
   filter: drop-shadow(0 16px var(--font));
+  font-size: 200%;
 }
 
 .day {
-  color: var(--font);
-  background-color: var(--color1);
-  border-radius: 50%;
+  color: var(--bg);
+  border-radius: 10vh;
 }
 
 #return:hover, #return:active {
