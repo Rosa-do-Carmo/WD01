@@ -44,19 +44,20 @@ th {
   display: inline-block;
   position: relative;
   margin: auto;
-  margin-left: -5px;
+  margin-left: -4vh;
   margin-top: -25px;
   padding: 10px;
+  padding-left: 4vh;
   padding-top: 3vh;
   height:5vh;
-  width:10vh;
+  width:12vh;
   border-radius: 0 0 5vh;
   background-color:var(--color1);
   border: 5px solid var(--font);
   text-align:center;
   color: var(--font);
   text-decoration: none;
-  filter: drop-shadow(0 16px var(--font));
+  filter: drop-shadow(16px 16px var(--font));
   font-size: 200%;
 }
 

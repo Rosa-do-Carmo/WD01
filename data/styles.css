@@ -119,12 +119,14 @@ section {
 
 }
 p {
+  color: var(--font);
   columns: 40vw 2;
   column-gap: 1vw;
   line-height: 1.5;
 }
 
 h3 {
+  color: var(--font);
   position: relative;
   font-size: 2vh;
   text-align: right;
@@ -149,8 +151,10 @@ p, h3, td, th, tr {
   font-family: "bodyfont";
 }
 h2 {
-  font-size: 300%;
+  font-size: 400%;
+  color: var(--font);
+  padding-bottom: 5vh;
 }
-a, h1, h2, h3, th, td {
+a, h1, h2, h3, th, td, strong {
   font-family: "headfont"; 
 }
