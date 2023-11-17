@@ -1,12 +1,25 @@
-
 @import url("table.css");
 @import url("days.css");
 
+@font-face {
+  font-family: bodyfont;
+  src: url("fonts/Salihone-6Y30v.otf");
+}
+@font-face {
+  font-family: headfont;
+  src: url("fonts/MuedaCity-BWDql.ttf");
+}
+
 :root {
-  --font: #003049;
+  /*--font: #003049;
   --bg: #eae2b7;
   --color2: #fcbf49;
   --color1: #f77f00;
+  --accent: #8d0801;*/
+  --font: #01263D;
+  --bg: #72bab5;
+  --color2: #fcbf49;
+  --color1: #ef4043;
   --accent: #8d0801;
 }
  
@@ -34,10 +47,10 @@ html, body {
   width: 100%;
   height: 100%;
   margin: 0 auto;
-  background-color: var(--bg);
+  background-color: var(--bg);/*
   background-image: url("http://www.photos-public-domain.com/wp-content/uploads/2012/01/crumpled-white-paper-texture.jpg");
 
-  background-image: url("https://jooinn.com/images/wrinkled-paper-texture-7.jpg");
+  background-image: url("https://jooinn.com/images/wrinkled-paper-texture-7.jpg");*/
   background-blend-mode: multiply;
 }
 
@@ -88,13 +101,33 @@ section {
   
   height: 100vh;
   background-color: var(--bg);
-  background-image: url("https://jooinn.com/images/wrinkled-paper-texture-7.jpg");
-  background-blend-mode: multiply;
+  /*background-image: url("https://jooinn.com/images/wrinkled-paper-texture-7.jpg");
+ */ background-blend-mode: multiply;
 }
 #day-page {
-  display: grid;
+ /* max-height: 200%;*/
+  max-width: 75%;
+  min-height: 10%;
+  min-width: 10%;
+  margin: 0 auto;
+  background-color: var(--color1);
+  padding: 5vw;
+  border: var(--font) 5px solid;
+  filter: drop-shadow(16px 16px var(--font));
+  border-radius: 5vh;
+
+}
+p {
   columns: 40vw 2;
-  column-gap: 10vw;
+  column-gap: 1vw;
+  line-height: 1.5;
+}
+
+h3 {
+  position: relative;
+  font-size: 2vh;
+  text-align: right;
+  bottom: -5vh;
 }
 
 /*The Eastern Front*/
@@ -108,4 +141,15 @@ section {
     font-size: 200%;
     bottom: 0;
   }
+}
+
+p, h3 {
+  font-size: 200%;
+  font-family: "bodyfont";
+}
+h2 {
+  font-size: 300%;
+}
+a, h1, h2, h3 {
+  font-family: "headfont"; 
 }

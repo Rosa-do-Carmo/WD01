@@ -21,13 +21,6 @@ article {
   h2 {
     font-size: 5vh;
   }
-  h3 {
-    position:relative;
-    bottom: -55vh;
-    font-size: 2vh;
-    text-align: right;
-
-  }
   
   #close {
     text-decoration: none;
