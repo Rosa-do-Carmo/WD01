@@ -49,9 +49,16 @@ table {
 }
 a, a:visited, a:hover, a:active {
 	color: inherit;
-}/*
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+#element::-webkit-scrollbar {
+    display: none;
+}
 body {
-	overflow: hidden;
+	overflow-x: hidden;
 }
 /* -  */
 

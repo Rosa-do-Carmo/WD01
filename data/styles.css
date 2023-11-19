@@ -11,11 +11,6 @@
 }
 
 :root {
-  /*--font: #003049;
-  --bg: #eae2b7;
-  --color2: #fcbf49;
-  --color1: #f77f00;
-  --accent: #8d0801;*/
   --font: #01263D;
   --bg: #72bab5;
   --color2: #be1e2d;
@@ -48,11 +43,7 @@ html, body {
   width: 100%;
   height: 100%;
   margin: 0 auto;
-  background-color: var(--bg);/*
-  background-image: url("http://www.photos-public-domain.com/wp-content/uploads/2012/01/crumpled-white-paper-texture.jpg");
-
-  background-image: url("https://jooinn.com/images/wrinkled-paper-texture-7.jpg");*/
-  background-blend-mode: multiply;
+  background-color: var(--bg);
 }
 
 #buffer {
@@ -69,10 +60,22 @@ header {
 }
 
 nav {
-  height: 100%;
-  width: 100vw;
+  position: absolute;
+  padding-top: 40vh;
+  padding-left: 10vw;
+  width: 90%;
   font-size: 5vh;
   display:inline-block;
+}
+#frontpage-img {
+  display: block;
+  position: relative;
+  margin: auto;
+  margin-right: 10vw;
+  padding: auto;
+  padding-top: 10vh;
+  max-height: 80vh;
+  width: auto;
 }
 br {
   height: 5vh;
@@ -80,7 +83,7 @@ br {
 #frontpagetitle {
   display: inline-block;
   position: relative;
-  margin: 10%  5vw auto;
+  margin: 5vh 1vw auto;
   padding: 10px;
   border: 5px solid var(--font);
   border-radius: 20px;
@@ -93,9 +96,12 @@ br {
 }
 h1 {
   position: absolute;
-  font-size: 10vh;
-  bottom:5vh;
+  font-size: 10vw;
+  padding-left: 10vw;
+  padding-bottom:5vh;
   color: var(--font);
+  margin-left: 1vw;
+  bottom: 0;
 }
 
 section {
@@ -135,15 +141,9 @@ h3 {
 
 /*The Eastern Front*/
 
-@media screen and (min-width: 600px) {
-  #frontpagetitle {
-    margin: 5vh 1vw auto;
-  }
-  h1 {
-    margin-left: 1vw;
-    font-size: 200%;
-    bottom: 0;
-  }
+@media screen and (max-width: 600px) {
+
+
 }
 
 p, h3, td, th, tr {
