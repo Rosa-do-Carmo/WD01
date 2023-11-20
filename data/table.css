@@ -79,11 +79,18 @@ make ".day:hover ~ article { }"
 
 to do the popup*/
 
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 600px) {
+  #table-wrap {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
   table {
-    width: 60vw;
-    height: 70vh;
+    width: 100vw;
+    height: 100vh;
     padding-top: 0;
     margin: auto;
   }
+
 }

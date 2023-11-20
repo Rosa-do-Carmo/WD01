@@ -22,6 +22,17 @@
 * {
   font-family: "bodyfont","arial", "helvetica", sans-serif;
 }
+#frontpage-img {
+  z-index: 0;
+  display: block;
+  position: relative;
+  margin: auto;
+  margin-right: 10vw;
+  padding: auto;
+  padding-top: 10vh;
+  max-height: 80vh;
+  width: auto;
+}
 s {
   text-decoration: line-through;
 }
@@ -60,6 +71,7 @@ header {
 }
 
 nav {
+  z-index: 1;
   position: absolute;
   padding-top: 40vh;
   padding-left: 10vw;
@@ -67,16 +79,7 @@ nav {
   font-size: 5vh;
   display:inline-block;
 }
-#frontpage-img {
-  display: block;
-  position: relative;
-  margin: auto;
-  margin-right: 10vw;
-  padding: auto;
-  padding-top: 10vh;
-  max-height: 80vh;
-  width: auto;
-}
+
 br {
   height: 5vh;
 }
@@ -84,7 +87,7 @@ br {
   display: inline-block;
   position: relative;
   margin: 5vh 1vw auto;
-  padding: 10px;
+  padding: 3vw;
   border: 5px solid var(--font);
   border-radius: 20px;
   background-color: var(--color1);
@@ -105,7 +108,6 @@ h1 {
 }
 
 section {
-  
   height: 100vh;
   background-color: var(--bg);
   /*background-image: url("https://jooinn.com/images/wrinkled-paper-texture-7.jpg");
@@ -139,13 +141,6 @@ h3 {
   bottom: -5vh;
 }
 
-/*The Eastern Front*/
-
-@media screen and (max-width: 600px) {
-
-
-}
-
 p, h3, td, th, tr {
   font-size: 200%;
   font-family: "bodyfont";
@@ -157,4 +152,56 @@ h2 {
 }
 a, h1, h2, h3, th, td, strong {
   font-family: "headfont"; 
+}
+/*The Eastern Front*/
+
+@media screen and (max-width: 600px) {
+  nav {
+    display: grid;
+    width: 100vw;
+    justify-content: right;
+    margin: 0;
+    padding-top: 10vh;
+    margin-top:50vh;
+    padding-right: 10vw;
+    margin-right: 10vw;
+  }
+  #frontpagetitle {
+    margin-right: 20vw;
+    text-align: right;
+    width: unset;
+    filter: none;
+  }
+
+  h1 {
+    position: absolute;
+    font-size: 25vw;
+    top: 5vh;
+    margin: 0 auto;
+  }
+  #frontpage-img {
+    position: absolute;
+    height: auto;
+    width: 140vw;
+    bottom: -3vw;
+    margin: 0 auto;
+    margin-left: -20vw;
+  }
+  #return {
+    display: none;
+    position:absolute;
+    bottom: -150vh;
+    border-radius: 5vh;
+    margin-left: 60vw;
+    margin-right: 10vw;
+    margin-bottom: 5vh;
+    padding: auto;
+    filter: none;
+  }
+  th {
+    font-size: 120%;
+  }
+  td, tr {
+    font-size: 150%;
+  }
 }
