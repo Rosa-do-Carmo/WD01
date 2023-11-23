@@ -176,6 +176,10 @@ a, h1, h2, h3, th, td, strong {
     max-width: 45vw;
     filter: none;
     padding: 3vw;
+    bottom: 0;
+  }
+  #frontpagetitle:hover {
+    bottom: 0;
   }
   a {
     font-size: 10vw;
@@ -217,5 +221,8 @@ a, h1, h2, h3, th, td, strong {
   }
   td, tr {
     font-size: 150%;
+  }
+  h3 {
+    bottom: 0;
   }
 }
