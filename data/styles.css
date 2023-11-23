@@ -87,7 +87,7 @@ br {
   display: inline-block;
   position: relative;
   margin: 5vh 1vw auto;
-  padding: 3vw;
+  padding: 1vw;
   border: 5px solid var(--font);
   border-radius: 20px;
   background-color: var(--color1);
@@ -153,24 +153,38 @@ h2 {
 a, h1, h2, h3, th, td, strong {
   font-family: "headfont"; 
 }
+
+.b-1, .b-2 {
+  display: inherit;
+}
 /*The Eastern Front*/
 
 @media screen and (max-width: 600px) {
   nav {
     display: grid;
     width: 100vw;
-    justify-content: right;
+    justify-content: space-evenly;
     margin: 0;
     padding-top: 10vh;
     margin-top:50vh;
     padding-right: 10vw;
-    margin-right: 10vw;
   }
   #frontpagetitle {
-    margin-right: 20vw;
-    text-align: right;
-    width: unset;
+    display: block;
+    position: absolute;
+    text-align: center;
+    max-width: 45vw;
     filter: none;
+    padding: 3vw;
+  }
+  a {
+    font-size: 10vw;
+  }
+  .b-1 {
+    left: 40vw !important;
+  }
+  .b-2 {
+    left: 5vw !important;
   }
 
   h1 {
