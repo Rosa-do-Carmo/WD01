@@ -80,11 +80,22 @@ make ".day:hover ~ article { }"
 to do the popup*/
 
 @media screen and (max-width: 600px) {
+  #page {
+    width: 100vw;
+    margin: 0 auto;
+  }
+  main {
+    width: 100vw;
+  }
+  section{
+    width: 100vw;
+    margin: 0 auto;
+    padding: auto;
+  }
   #table-wrap {
     width: 100vw;
     height: 100vh;
-    margin: 0;
-    padding: 0;
+    margin: 0 auto;
   }
   table {
     width: 100vw;
