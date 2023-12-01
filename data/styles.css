@@ -204,14 +204,14 @@ a, h1, h2, h3, th, td, strong {
     margin-left: -20vw;
   }
   #return {
-    display: none;
-    position:absolute;
-    bottom: -150vh;
+    display: flex;
+    position: absolute;
+    bottom: -165vh;
     border-radius: 5vh;
-    margin-left: 60vw;
+    margin-left: 40vw;
     margin-right: 10vw;
     margin-bottom: 5vh;
-    padding: auto;
+    text-align: center;
     filter: none;
   }
   th {
