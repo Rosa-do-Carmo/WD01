@@ -5,20 +5,22 @@
   font-family: "bodyfont";
   font-size: 2vh;
   width: 60vw;
-  height: 80vh;
+  height: 100vh;
   text-align: center;
   background-color: var(--color3);
 }
 table {
-margin: auto;
-width: 90%;
+  margin: auto;
+  margin-top: 15vh;
+  width: 90%;
 }
-th, td {
+th,
+td {
   font-style: bold;
   color: var(--font);
   font-size: 200%;
   margin-top: 50px;
-  margin:auto;
+  margin: auto;
   /*border: solid 5px var(--font);
   background-color: var(--color2);*/
   padding-top: 20px;
@@ -37,40 +39,49 @@ th, td {
 th {
   color: var(--bg);
 }
-#return-d {
-  margin: auto;
-}
+
 #return {
-  display: inline-block;
-  position: relative;
-  margin: auto;
-  margin-left: -4vh;
-  margin-top: -25px;
-  padding: 10px;
-  padding-left: 4vh;
-  padding-top: 3vh;
-  height:5vh;
-  width:12vh;
-  border-radius: 0 0 5vh;
-  background-color:var(--color1);
-  border: 5px solid var(--font);
-  text-align:center;
-  color: var(--font);
+  display: flex;
+  position: absolute;
+  height: 10vh;
+  width: 10vh;
+  right: 32vw;
+  bottom: -140vh;
+  margin-right: 0;
+  margin-bottom: 0;
+  /* background-color:var(--color1);
+  border: 5px solid var(--font); */
+  text-align: center;
+
   text-decoration: none;
-  filter: drop-shadow(16px 16px var(--font));
-  font-size: 200%;
+  font-size: 400%;
+  border-radius: 50%;
+  text-align: center;
+}
+#return-text {
+  color: var(--bg);
+  font-weight: bolder;
+  line-height: 1.1;
+  font-size: 250%;
 }
 
 .day {
-  color: var(--bg);
+  color: var(--color1);
   border-radius: 10vh;
 }
-
-#return:hover, #return:active {
-  bottom: -16px;
-  filter: none;
+#back {
+  color: var(--font);
+  font-size: 200%;
+  display: inline-block;
+  position: absolute;
+  margin: 5vh 1vw auto;
+  padding: 1vw;
+  border: 5px solid var(--font);
+  border-radius: 20px;
+  background-color: var(--color1);
+  filter: drop-shadow(0 16px var(--font));
+  right: 5vw;
 }
-
 /*Eastern front*/
 
 /*Note to self: 
@@ -80,6 +91,9 @@ make ".day:hover ~ article { }"
 to do the popup*/
 
 @media screen and (max-width: 600px) {
+  a {
+    z-index: 99;
+  }
   #page {
     overflow-x: hidden;
     width: 100vw;
@@ -88,7 +102,7 @@ to do the popup*/
   main {
     width: 100vw;
   }
-  section{
+  section {
     width: 100vw;
     margin: 0 auto;
   }
@@ -96,13 +110,18 @@ to do the popup*/
     width: 100vw;
     height: 120vh;
     margin: 0 auto;
-    padding: 0;
+    padding: 0vh;
     padding-top: 10vh;
   }
   table {
     width: 100vw;
-    height: 80vh;
+    height: 50vh;
     padding-top: 0;
     margin: auto;
+    margin-top: 15vh;
+  }
+  #back {
+    right: 35vw;
+    font-size: 350%;
   }
 }

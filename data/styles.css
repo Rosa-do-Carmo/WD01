@@ -16,7 +16,6 @@
   --color2: #be1e2d;
   --color1: #ef4043;
   --color3: #0e4c6d;
-  --accent: #8d0801;
 }
  
 * {
@@ -206,14 +205,14 @@ a, h1, h2, h3, th, td, strong {
   #return {
     display: flex;
     position: absolute;
-    bottom: -165vh;
+    bottom: -150vh;
+    right: 40vw;
     border-radius: 5vh;
-    margin-left: 40vw;
-    margin-right: 10vw;
     margin-bottom: 5vh;
     text-align: center;
-    filter: none;
+    color: var(--color1);
   }
+
   th {
     font-size: 120%;
   }
