@@ -32,9 +32,6 @@
   max-height: 80vh;
   width: auto;
 }
-s {
-  text-decoration: line-through;
-}
 a:active {
   color: var(--font);
   text-decoration: none;
@@ -129,6 +126,7 @@ p {
   columns: 40vw 2;
   column-gap: 1vw;
   line-height: 1.5;
+  overflow: clip;
 }
 
 h3 {
@@ -138,6 +136,16 @@ h3 {
   text-align: right;
   bottom: -5vh;
 }
+
+s {
+  font-family: "bodyfont";
+  text-decoration: line-through;
+  border-radius: 1vh;
+}
+#unreadable, s::selection {
+  background-color: var(--font);
+}
+
 
 p, h3, td, th, tr {
   font-size: 200%;
