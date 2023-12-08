@@ -72,15 +72,16 @@ th {
 #back {
   color: var(--font);
   font-size: 200%;
-  display: inline-block;
-  position: absolute;
-  margin: 5vh 1vw auto;
+  display: flex;
+  position: relative;
+  margin: 5vh auto;
+  margin-right: 6vw;
   padding: 1vw;
   border: 5px solid var(--font);
   border-radius: 20px;
   background-color: var(--color1);
   filter: drop-shadow(0 16px var(--font));
-  right: 5vw;
+  width: 4vw;
 }
 /*Eastern front*/
 
@@ -121,6 +122,10 @@ to do the popup*/
     margin-top: 15vh;
   }
   #back {
+    width: auto;
+    display: flex;
+    position: absolute;
+    margin: 5vw 1vw auto;
     right: 35vw;
     font-size: 350%;
   }
