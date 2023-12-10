@@ -1,6 +1,23 @@
 CICLONE
 
+CICLONE - Diário de Uma Montanha-Russa
+Texto de Inês Barahona & Miguel Fragata
+Coleção Orfeu Mini, 1ª edição
+Editora Orfeu Negro
+Janeiro 2019
 
+Website criado por:
+Carlos Coelho
+Daniel Norberto
+Inês Salgado
+José Vinhas
+
+Turma WD101
+Unidade Curricular - Web Design
+Licenciatura de Design de Comunicação
+Faculdade de Belas Artes - Universidade do Porto
+
+Fontes usadas:
 
 Anabela
 11 de agosto de 1973
