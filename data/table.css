@@ -84,6 +84,9 @@ th {
   filter: drop-shadow(0 16px var(--font));
   width: 4vw;
 }
+#back {
+  width: 7vw;
+}
 /*Eastern front*/
 
 /*Note to self: 
@@ -93,6 +96,9 @@ make ".day:hover ~ article { }"
 to do the popup*/
 
 @media screen and (max-width: 600px) {
+  #back {
+    width: unset !important;
+  }
   a {
     z-index: 99;
   }

@@ -122,10 +122,6 @@ section {
   filter: drop-shadow(16px 16px var(--font));
   border-radius: 5vh;
 }
-#about-page {
-  display: flex;
-  
-}
 p {
   color: var(--font);
   columns: 40vw 2;
