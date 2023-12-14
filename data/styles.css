@@ -1,10 +1,10 @@
 @import url("table.css");
-@import url("days.css");
 
 @font-face {
   font-family: bodyfont;
   src: url("fonts/Salihone-6Y30v.otf");
 }
+
 @font-face {
   font-family: headfont;
   src: url("fonts/MuedaCity-BWDql.ttf");
@@ -17,26 +17,17 @@
   --color1: #ef4043;
   --color3: #0e4c6d;
 }
- 
+
 * {
-  font-family: "bodyfont","arial", "helvetica", sans-serif;
+  font-family: "bodyfont", "arial", "helvetica", sans-serif;
 }
-#frontpage-img {
-  z-index: 0;
-  display: block;
-  position: relative;
-  margin: auto;
-  margin-right: 7vw;
-  padding: auto;
-  padding-top: 10vh;
-  max-height: 80vh;
-  width: auto;
-}
+
 a:active {
   color: var(--font);
   text-decoration: none;
 }
-body { 
+
+body {
   position: relative;
   display: block;
   width: 100vw;
@@ -53,14 +44,17 @@ body {
   background-image: url("imgs/ciclone_doodle_capa.png");
   background-size: 100vw 100vh;
 }
+
 main {
   height: 100%;
 }
+
 #buffer {
   position: relative;
   height: 50vh;
 }
-/*The Northen front*/
+
+/* Capa */
 header {
   color: var(--font);
   font-size: 5em;
@@ -77,12 +71,25 @@ nav {
   padding-left: 10vw;
   width: 90%;
   font-size: 5vh;
-  display:inline-block;
+  display: inline-block;
 }
 
 br {
   height: 5vh;
 }
+
+#frontpage-img {
+  z-index: 0;
+  display: block;
+  position: relative;
+  margin: auto;
+  margin-right: 7vw;
+  padding: auto;
+  padding-top: 10vh;
+  max-height: 80vh;
+  width: auto;
+}
+
 #frontpagetitle {
   display: inline-block;
   position: relative;
@@ -93,25 +100,29 @@ br {
   background-color: var(--color1);
   filter: drop-shadow(0 16px var(--font));
 }
+
 #frontpagetitle:hover {
   bottom: -16px;
   filter: none;
 }
+
 h1 {
   position: absolute;
   font-size: 10vw;
   padding-left: 10vw;
-  padding-bottom:5vh;
+  padding-bottom: 5vh;
   color: var(--font);
   margin-left: 1vw;
   bottom: 0;
 }
 
+/* Secções em que ficam os textos */
 section {
   width: 100vw;
 }
-#day-page, #about-page {
- /* max-height: 200%;*/
+
+#day-page,
+#about-page {
   max-width: 75%;
   min-height: 10%;
   min-width: 10%;
@@ -122,6 +133,35 @@ section {
   filter: drop-shadow(16px 16px var(--font));
   border-radius: 5vh;
 }
+
+/* Botão de voltar atrás */
+#return {
+  font-family: 'bodyfont';
+  display: flex;
+  position: absolute;
+  height: 10vh;
+  width: 10vh;
+  right: 32vw;
+  bottom: 30vh;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-align: center;
+
+  text-decoration: none;
+  font-size: 400%;
+  border-radius: 50%;
+  text-align: center;
+}
+
+#return-text {
+  color: var(--bg);
+  font-weight: bolder;
+  line-height: 1.1;
+  /*font-size: 250%;*/
+}
+
+/* Texto dentro dos "popups" */
+
 p {
   color: var(--font);
   columns: 40vw 2;
@@ -143,28 +183,47 @@ s {
   text-decoration: line-through;
   border-radius: 1vh;
 }
-#unreadable, s::selection {
+/* tratar das fontes */
+
+#unreadable,
+s::selection {
   background-color: var(--font);
 }
 
-
-p, h3, td, th, tr {
+p,
+h3,
+td,
+th,
+tr {
   font-size: 200%;
   font-family: "bodyfont";
 }
+
 h2 {
-  font-size: 400%;
+  font-size: 5vh;
   color: var(--font);
   padding-bottom: 5vh;
 }
-a, h1, h2, h3, th, td, strong {
-  font-family: "headfont"; 
+
+a,
+h1,
+h2,
+h3,
+th,
+td,
+strong {
+  font-family: "headfont";
 }
 
-.b-1, .b-2 {
+.b-1,
+.b-2 {
   display: inherit;
 }
-/*The Eastern Front*/
+
+/* Versão mobile
+Eu sei que o professor nos disse estritamente para não fazermos assim,
+mas só me lembrei a meio do trabalho e parecia mais facil continuar
+*/
 
 @media screen and (max-width: 600px) {
   nav {
@@ -173,9 +232,10 @@ a, h1, h2, h3, th, td, strong {
     justify-content: space-evenly;
     margin: 0;
     padding-top: 10vh;
-    margin-top:50vh;
+    margin-top: 50vh;
     padding-right: 10vw;
   }
+
   #frontpagetitle {
     display: block;
     position: absolute;
@@ -185,15 +245,19 @@ a, h1, h2, h3, th, td, strong {
     padding: 3vw;
     bottom: 0;
   }
+
   #frontpagetitle:hover {
     bottom: 0;
   }
+
   a {
     font-size: 10vw;
   }
+
   .b-1 {
     left: 40vw !important;
   }
+
   .b-2 {
     left: 5vw !important;
   }
@@ -204,6 +268,7 @@ a, h1, h2, h3, th, td, strong {
     top: 5vh;
     margin: 0 auto;
   }
+
   #frontpage-img {
     position: absolute;
     height: auto;
@@ -212,6 +277,7 @@ a, h1, h2, h3, th, td, strong {
     margin: 0 auto;
     margin-left: -20vw;
   }
+
   #return {
     display: flex;
     position: absolute;
@@ -226,10 +292,21 @@ a, h1, h2, h3, th, td, strong {
   th {
     font-size: 120%;
   }
-  td, tr {
+
+  td,
+  tr {
     font-size: 150%;
   }
+
   h3 {
     bottom: 0;
+  }
+  #articlefix {
+    margin-top: 20vh;
+  }
+  article{
+    height: 60vh;
+    width: 60vw;
+    margin: 20vh 20vw auto;
   }
 }

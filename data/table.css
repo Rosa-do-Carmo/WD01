@@ -1,4 +1,4 @@
-/*The central front*/
+/*Tudo relacionado à tablea com os dias*/
 #table-wrap {
   margin: 0 auto;
   padding: 5vh;
@@ -21,10 +21,7 @@ td {
   font-size: 200%;
   margin-top: 50px;
   margin: auto;
-  /*border: solid 5px var(--font);
-  background-color: var(--color2);*/
   padding-top: 20px;
-  /*border-radius: 10%;*/
 }
 #headless {
   display: none;
@@ -39,37 +36,12 @@ td {
 th {
   color: var(--bg);
 }
-
-#return {
-  font-family: 'bodyfont';
-  display: flex;
-  position: absolute;
-  height: 10vh;
-  width: 10vh;
-  right: 32vw;
-  bottom: 30vh;
-  margin-right: 0;
-  margin-bottom: 0;
-  /* background-color:var(--color1);
-  border: 5px solid var(--font); */
-  text-align: center;
-
-  text-decoration: none;
-  font-size: 400%;
-  border-radius: 50%;
-  text-align: center;
-}
-#return-text {
-  color: var(--bg);
-  font-weight: bolder;
-  line-height: 1.1;
-  /*font-size: 250%;*/
-}
-
+ 
 .day {
   color: var(--color1);
   border-radius: 10vh;
 }
+/* botão de voltar atrás */
 #back {
   color: var(--font);
   font-size: 200%;
@@ -87,13 +59,7 @@ th {
 #back {
   width: 7vw;
 }
-/*Eastern front*/
-
-/*Note to self: 
-
-make ".day:hover ~ article { }"
-
-to do the popup*/
+/*Versão mobile*/
 
 @media screen and (max-width: 600px) {
   #back {
