@@ -226,6 +226,10 @@ mas só me lembrei a meio do trabalho e parecia mais facil continuar
 */
 
 @media screen and (max-width: 600px) {
+  #page{
+    background-size: auto 100vh;
+    background-position: 25% 0;
+  }
   nav {
     display: grid;
     width: 100vw;
