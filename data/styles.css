@@ -13,9 +13,10 @@
 :root {
   --font: #01263D;
   --bg: #72bab5;
-  --color2: #be1e2d;
-  --color1: #ef4043;
+  --color1: #cc0000;
+  --color2: #ef4043;
   --color3: #0e4c6d;
+  --color4: #e98124;
 }
 
 * {
