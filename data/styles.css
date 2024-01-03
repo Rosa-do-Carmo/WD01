@@ -53,6 +53,7 @@ main {
 #buffer {
   position: relative;
   height: 50vh;
+  z-index: -9;
 }
 
 /* Capa */
@@ -142,9 +143,9 @@ section {
   display: flex;
   position: absolute;
   height: 10vh;
-  width: 10vh;
-  right: 32vw;
-  bottom: 30vh;
+  width: 15vw;
+  right: 25vw;
+  bottom: 40vh;
   margin-right: 0;
   margin-bottom: 0;
   text-align: center;
@@ -152,6 +153,11 @@ section {
   font-size: 400%;
   border-radius: 20px;
   text-align: center;
+  color: var(--color4);
+  border: 5px solid var(--font);
+  border-radius: 20px;
+  background-color: var(--color1);
+  filter: drop-shadow(16px 16px var(--font));
 }
 
 #return-text {
@@ -222,6 +228,10 @@ strong {
   display: inherit;
 }
 
+#literally-just-so-that-the-calendar-button-leads-to-slightly-above-the-calendar {
+  height: 5vh;
+}
+
 /* Versão mobile
 Eu sei que o professor nos disse estritamente para não fazermos assim,
 mas só me lembrei a meio do trabalho e parecia mais facil continuar
@@ -239,7 +249,7 @@ mas só me lembrei a meio do trabalho e parecia mais facil continuar
     justify-content: space-evenly;
     margin: 0;
     padding-top: 10vh;
-    margin-top: 50vh;
+    margin-top: 70vh;
     padding-right: 10vw;
   }
 
@@ -290,13 +300,8 @@ mas só me lembrei a meio do trabalho e parecia mais facil continuar
     position: absolute;
     right: 40vw;
     border-radius: 20px;
-    margin-bottom: 5vh;
+    margin-bottom: -15vh;
     text-align: center;
-    color: var(--color4);
-    border: 5px solid var(--font);
-    border-radius: 20px;
-    background-color: var(--color1);
-    filter: drop-shadow(16px 16px var(--font));
     width: 50vw;
     left: 25vw;
   }
