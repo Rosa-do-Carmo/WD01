@@ -57,7 +57,7 @@ th {
   border: 5px solid var(--font);
   border-radius: 20px;
   background-color: var(--color1);
-  filter: drop-shadow(0 16px var(--font));
+  filter: drop-shadow(16 16px var(--font));
   width: 4vw;
 }
 #back {
@@ -85,18 +85,20 @@ th {
     margin: 0 auto;
   }
   #table-wrap {
-    width: 100vw;
-    height: 120vh;
+    width: 90vw;
+    height: 50vh;
     margin: 0 auto;
     padding: 0vh;
-    padding-top: 10vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    border-radius: 16px;
   }
   table {
-    width: 100vw;
+    width: 90vw;
     height: 50vh;
     padding-top: 0;
     margin: auto;
-    margin-top: 15vh;
+    margin-top: 0vh;
   }
   #back {
     width: auto;
