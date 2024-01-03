@@ -148,10 +148,9 @@ section {
   margin-right: 0;
   margin-bottom: 0;
   text-align: center;
-
   text-decoration: none;
   font-size: 400%;
-  border-radius: 50%;
+  border-radius: 20px;
   text-align: center;
 }
 
@@ -185,6 +184,7 @@ s {
   text-decoration: line-through;
   border-radius: 1vh;
 }
+
 /* tratar das fontes */
 
 #unreadable,
@@ -228,10 +228,11 @@ mas só me lembrei a meio do trabalho e parecia mais facil continuar
 */
 
 @media screen and (max-width: 600px) {
-  #page{
+  #page {
     background-size: auto 100vh;
     background-position: 25% 0;
   }
+
   nav {
     display: grid;
     width: 100vw;
@@ -288,14 +289,14 @@ mas só me lembrei a meio do trabalho e parecia mais facil continuar
     display: flex;
     position: absolute;
     right: 40vw;
-    border-radius: 5vh;
+    border-radius: 20px;
     margin-bottom: 5vh;
     text-align: center;
     color: var(--color4);
-  border: 5px solid var(--font);
-  border-radius: 20px;
-  background-color: var(--color1);
-  filter: drop-shadow(16px 16px var(--font));
+    border: 5px solid var(--font);
+    border-radius: 20px;
+    background-color: var(--color1);
+    filter: drop-shadow(16px 16px var(--font));
     width: 50vw;
     left: 25vw;
   }
@@ -312,10 +313,12 @@ mas só me lembrei a meio do trabalho e parecia mais facil continuar
   h3 {
     bottom: 0;
   }
+
   #articlefix {
     margin-top: 20vh;
   }
-  article{
+
+  article {
     height: 60vh;
     width: 60vw;
     margin: 20vh 20vw auto;

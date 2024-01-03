@@ -8,7 +8,7 @@
   max-height: 100vh;
   margin-bottom: 10vh;
   text-align: center;
-  border-radius: 5vh;
+  border-radius: 20px;
   border: var(--font) 5px solid;
   background-color: var(--color1);
   filter: drop-shadow(16px 16px var(--font));
@@ -91,7 +91,6 @@ th {
     padding: 0vh;
     padding-top: 5vh;
     padding-bottom: 5vh;
-    border-radius: 16px;
   }
   table {
     width: 90vw;
